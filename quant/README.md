@@ -6,12 +6,14 @@ Programs for stock price prediction
     * Given prices and other features for the last N days, we do prediction for day N+1
 	* Here we split 3 years of data into train(60%), dev(20%) and test(20%)
 	* Doesn't work well, likely because data is not normalized
+	
 * **StockPricePrediction_v1a_xgboost.ipynb**:
     * Predict stock price in next day using XGBoost
     * Given prices and other features for the last N days, we do prediction for day N+1
     * Here we split 3 years of data into train(60%), dev(20%) and test(20%)
     * Here we scale the train set to have mean 0 and variance 1, and apply the same transformation to dev and test sets
     * Doesn't work well, likely because the model was trained on prices below ~1.7 and so when it saw prices above 1.7 for the dev set, it could not generalize well
+    
 * **StockPricePrediction_v1b_xgboost.ipynb**:
     * Predict stock price in next day using XGBoost
     * Given prices and other features for the last N days, we do prediction for day N+1
